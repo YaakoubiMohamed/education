@@ -1,0 +1,35 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="styler.css">
+<title>Login Form Design</title>
+    
+<body>
+
+<form method="post">
+<div class="loginbox">
+ <img src="avatar.png" class="avatar">
+    <h1>Register</h1>
+
+    {{ form_start(registrationForm) }}
+     {{ form_row(registrationForm.fullname) }}
+        {{ form_row(registrationForm.email) }}
+        {{ form_row(registrationForm.plainPassword, {
+            label: 'Password'
+        }) }}
+          {{ form_row(registrationForm.adresse) }}
+            {{ form_row(registrationForm.grade) }}
+        
+        {{ form_row(registrationForm.agreeTerms) }}
+
+        <input type="submit" name="submit" value="registre">
+
+         <br>
+       <B> <B> <a href="login" class="text-center">I already have a membership</a></B>
+        <br>
+    {{ form_end(registrationForm) }}
+   </form>
+</body>
+
+</head>
+</html>

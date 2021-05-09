@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Choix index{% endblock %}
+
+{% block body %}
+    <h1>Choix index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Correction</th>
+                <th>Texte</th>
+                    <th>Question</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for Choix in choixes %}
+            <tr>
+                <td>{{ Choix.id }}</td>
+                <td>{{ Choix.correction }}</td>
+                <td>{{ Choix.texte }}</td>
+                 <td>{{ Choix.idq }}</td>
+                <td>
+                    <a href="{{ path('Choix_show', {'id': Choix.id}) }}">show</a>
+                    <a href="{{ path('choix_edit', {'id': Choix.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('choix_new') }}">Create new</a>
+{% endblock %}

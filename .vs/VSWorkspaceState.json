@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\config\\packages",
+    "\\public",
+    "\\src",
+    "\\templates",
+    "\\templates\\layouts",
+    "\\tests"
+  ],
+  "SelectedNode": "\\templates\\base.html.twig",
+  "PreviewInSolutionExplorer": false
+}

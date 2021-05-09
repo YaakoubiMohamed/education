@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}User{% endblock %}
+
+{% block body %}
+    <h1>User</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ User.id }}</td>
+            </tr>
+            <tr>
+                <th>Adresse</th>
+                <td>{{ User.adresse }}</td>
+            </tr>
+            <tr>
+                <th>Motdepasse</th>
+                <td>{{ User.motdepasse }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ User.nom }}</td>
+            </tr>
+            <tr>
+                <th>Prenom</th>
+                <td>{{ User.prenom }}</td>
+            </tr>
+            <tr>
+                <th>Grade</th>
+                <td>{{ User.grade }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+  
+
+
+  <a href="{{ path('User_edit', {'id': User.id}) }}"><button type="button" class="btn btn-warning">Modifier <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+  <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+  <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+</svg> </button></a>
+
+    {{ include('User/_delete_form.html.twig') }}
+
+    <a href="{{ path('User_index') }}"> <button type="button" class="btn btn-outline-primary">Retour
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-left-square" viewBox="0 0 16 16">
+  <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+  <path d="M10.205 12.456A.5.5 0 0 0 10.5 12V4a.5.5 0 0 0-.832-.374l-4.5 4a.5.5 0 0 0 0 .748l4.5 4a.5.5 0 0 0 .537.082z"/>
+</svg> </button> </a>
+{% endblock %}

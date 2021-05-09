@@ -1,0 +1,85 @@
+
+<div class="header-top bg-theme-color-2 sm-text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="widget no-border m-0">
+          <ul class="list-inline">
+            <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-white"></i> <a class="text-white" href="#">123-456-789</a> </li>
+            <li class="text-white m-0 pl-10 pr-10"> <i class="fa fa-clock-o text-white"></i> Mon-Fri 8:00 to 2:00 </li>
+            <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-white"></i> <a class="text-white" href="#">contact@yourdomain.com</a> </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="widget no-border m-0">
+          <ul class="list-inline text-right sm-text-center">
+            <li>
+              <a href="#" class="text-white">FAQ</a>
+            </li>
+            <li class="text-white">|</li>
+            <li>
+              <a href="#" class="text-white">Help Desk</a>
+            </li>
+            <li class="text-white">|</li>
+            <li>
+              <a href="#" class="text-white">Support</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="header-nav">
+   
+    <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
+      <div class="container">
+        <nav id="menuzord-right" class="menuzord default">
+          <a class="menuzord-brand pull-left flip" href="javascript:void(0)">
+            <img src="assets/images/logo-wide.png" alt="">
+          </a>
+         
+          <ul class="menuzord-menu">
+            <li class="active"><a href="/home">Home   <span class="indicator"></span></a>
+            
+              
+            
+            </li>
+            <li><a href="#">Departement</a>
+
+              
+              
+              <ul class="dropdown">
+                
+                <li *ngFor="let departement of departements" > <a href="#">{{departement.nom}} </a>
+                  <ul class="dropdown">
+                    <li><a href="">Header Style1</a></li>
+                   
+                  </ul>
+                </li>
+      
+              </ul>
+            </li>
+
+            <li><a href="#">Multi Page Layouts</a>
+              <ul class="dropdown">
+                <li><a href="index-mp-layout1.html">Layout1</a></li>
+                <li><a href="index-mp-layout2.html">Layout2</a></li>
+                <li><a href="index-mp-layout3.html">Layout3</a></li>
+              </ul>
+            
+            
+         
+          </ul>
+        </nav>
+      </div>
+    </div>
+    
+    
+  </div>
+
+  
+  
